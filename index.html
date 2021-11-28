@@ -37,16 +37,52 @@
     </nav>
 
     <ul class="header__contacts-list">
-        <li class="header__contacts-item"><a class="header__contacts-link link" href="mailto:info@devstudio.com">
-             <svg class="header__contacts-icon" width="16" height="12">
+        <li class="header__contacts-item"><a class="header__contacts-link" href="mailto:info@devstudio.com">
+             <svg class="header__icon-envelope" width="16" height="12">
             <use href="./images/sprite.svg#icon-envelope"></use>
         </svg> info@devstudio.com</a></li>
-        <li class="contacts-list__item"><a class="header__contacts-link link" href="tel:+380961111111">
-            <svg class="header__contacts-icon" width="10" height="16">
+        <li class="contacts-list__item"><a class="header__contacts-link" href="tel:+380961111111">
+            <svg class="header__icon-smartphone" width="10" height="16">
             <use href="./images/sprite.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a></li>
     </ul>
   
+    <button class="header__mobile-menu-btn" data-menu-open>
+          <svg class="header__mobile-menu-icon">
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            </svg>
+          </button>
+<nav class="mobile-menu__site-nav">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+            <a class=" mobile-menu__link mobile-menu__link_current" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href=" ./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Контакты</a>
+        </li>
+    </ul>
+</nav>
+
+<ul class="mobile-menu__contacts-list">
+    <li class="mobile-menu__contacts-item"><a class="mobile-menu__contacts-link" href="mailto:info@devstudio.com">
+             info@devstudio.com</a></li>
+    <li class="mobile-menu__contacts-item"><a class="mobile-menu__contacts-link" href="tel:+380961111111">
+           +38 096 111 11 11</a></li>
+</ul>
+          
+        </div>
+
+
 </div>
     </header>
 
@@ -60,7 +96,7 @@
                 </div>
         </section>
 
-        <section class="peculiarities section">
+        <!-- <section class="peculiarities section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="peculiarities-list list">
@@ -107,9 +143,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
   
-        <section class="our-business section">
+        <!-- <section class="our-business section">
             <div class="container">
                 <h2 class="section-title our-business-title">Чем мы занимаемся</h2>
                 <ul class="our-business-list list">
@@ -128,9 +164,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="section-title team-title">Наша команда</h2>
                 <ul class="team-list list">
@@ -241,9 +277,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="section our-clients-section">
+        <!-- <section class="section our-clients-section">
             <div class="container">
                 <h2 class="section-title our-clients-title">
                     Постоянные клиенты
@@ -295,11 +331,11 @@
              </ul>
 
             </div>
-        </section>
+        </section> -->
 
     </main>
     
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container">
         <div class="footer__flex-container">
         <div class="footer__first-part footer__item">
@@ -347,7 +383,7 @@
             <p class="footer__third-part-text">Подпишитесь на рассылку</p>
             <form class="sub-form">
                 <label  class="sub-form__field" >
-                    <!-- <span class="footer-form-label" lang="en">E-mail</span> -->
+                    
                     <input type="email" class="sub-form__input" name="email" placeholder="E-mail">
                 </label>
 <button class="sub-form__btn btn" type="submit">Подписаться
@@ -361,7 +397,7 @@
         </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal" >
@@ -427,6 +463,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
