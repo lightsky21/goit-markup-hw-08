@@ -96,10 +96,10 @@
                 </div>
         </section>
 
-        <!-- <section class="peculiarities section">
+        <section class="peculiarities section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
-                <ul class="peculiarities-list list">
+                <ul class="peculiarities-list">
                     <li class="peculiarities-item"> 
                         <div class="peculiarities-thumb">
                             <svg width="70" height="70">
@@ -143,35 +143,87 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
   
-        <!-- <section class="our-business section">
+        <section class="our-business section">
             <div class="container">
                 <h2 class="section-title our-business-title">Чем мы занимаемся</h2>
                 <ul class="our-business-list list">
                     <li class="our-business-item">
-                        <img src="./images/do-img-1.jpg" alt="человек печатает на клавиатуре" width="370" height="294"> 
-                        <div class="our-business-item-overlay"><p class="our-business-item-description">Десктопные приложения</p></div>
+                        
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                              ./images/do-img/do-img-1-desktop.webp    1x,
+                                              ./images/do-img/do-img-1-desktop@2x.webp 2x
+                                            " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                              ./images/do-img/do-img-1-desktop.jpg    1x,
+                                              ./images/do-img/do-img-1-desktop@2x.jpg 2x
+                                            " />
+                                            <img class="our-business-list-img" src="#" alt="человек печатает на клавиатуре" />
+                                            </picture>
+                        <div class="our-business-item-overlay">
+                            <p class="our-business-item-description">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="our-business-item">
-                        <img src="./images/do-img-2.jpg" alt="человек смотрить на экран ноутбука и держит в руке телефон"
-                            width="370" height="294"> 
-                            <div class="our-business-item-overlay"><p class="our-business-item-description">Мобильные приложения</p></div>
+                    
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                                                          ./images/do-img/do-img-2-desktop.webp    1x,
+                                                                          ./images/do-img/do-img-2-desktop@2x.webp 2x
+                                                                        " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                                                          ./images/do-img/do-img-2-desktop.jpg    1x,
+                                                                          ./images/do-img/do-img-2-desktop@2x.jpg 2x
+                                                                        " />
+                                <img class="our-business-list-img" src="#" alt="человек смотрить на экран ноутбука и держит в руке телефон" />
+                            </picture>
+                        <div class="our-business-item-overlay">
+                            <p class="our-business-item-description">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="our-business-item">
-                        <img src="./images/do-img-3.jpg" alt="человек рисует на планшете" width="370" height="294"> 
-                        <div class="our-business-item-overlay"><p class="our-business-item-description">Дизайнерские решения</p></div>
+                        
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                                                                                  ./images/do-img/do-img-3-desktop.webp    1x,
+                                                                                                  ./images/do-img/do-img-3-desktop@2x.webp 2x
+                                                                                                " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                                                                                  ./images/do-img/do-img-3-desktop.jpg    1x,
+                                                                                                  ./images/do-img/do-img-3-desktop@2x.jpg 2x
+                                                                                                " />
+                            <img class="our-business-list-img" src="#" alt="человек рисует на планшете" />
+                        </picture>
+                        <div class="our-business-item-overlay">
+                            <p class="our-business-item-description">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
                 <h2 class="section-title team-title">Наша команда</h2>
-                <ul class="team-list list">
+                <ul class="team-list">
                     <li class="team-item">
                         <img src="./images/portrait-img-1.jpg" alt="портрет мужчины" width="270" height="260">
+                        <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                                                                                                              ./images/do-img/do-img-1-desktop.webp    1x,
+                                                                                                                              ./images/do-img/do-img-1-desktop@2x.webp 2x
+                                                                                                                            "
+                            type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                                                                                                              ./images/do-img/do-img-1-desktop.jpg    1x,
+                                                                                                                              ./imagesdo-imgt/do-img-1-desktop@2x.jpg 2x
+                                                                                                                            " />
+                        
+                       
+                        <img class="our-business-list-img" src="#" alt="человек печатает на клавиатуре" />
+                        </picture>
                         <div class="team-item-description">
                             <h3 class="team-item-title">Игорь Демьяненко</h3>
                             <p class="team-item-text" lang="en">Product Designer</p>
@@ -277,7 +329,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section class="section our-clients-section">
             <div class="container">

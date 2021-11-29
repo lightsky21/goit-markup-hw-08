@@ -93,8 +93,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -145,11 +152,18 @@ img {
 }
 
 .section-title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .social-list {
@@ -480,12 +494,6 @@ img {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 1199px) {
-  .header__contacts-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .header__contacts-item:not(:last-child) {
     margin-right: 30px;
@@ -573,6 +581,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -755,19 +765,43 @@ img {
   background-color: var(--hero-btn-focus-background-color);
 }
 
-.peculiarities-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .peculiarities-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.peculiarities-item {
-  width: 270px;
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .peculiarities-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
-.peculiarities-item:last-child {
-  margin-right: 0;
+@media (max-width: 767px) {
+  .peculiarities-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .peculiarities-item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .peculiarities-item {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .peculiarities-thumb {
@@ -804,6 +838,12 @@ img {
 
 .our-business {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .our-business {
+    display: none;
+  }
 }
 
 .our-business-title,

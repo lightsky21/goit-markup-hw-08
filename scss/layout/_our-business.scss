@@ -1,5 +1,9 @@
 .our-business {
   padding-top: 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .our-business-title,
 .team-title {
