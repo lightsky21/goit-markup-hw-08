@@ -1,7 +1,7 @@
 .our-clients-list {
   // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
   @extend %list;
   display: flex;
   flex-wrap: wrap;
