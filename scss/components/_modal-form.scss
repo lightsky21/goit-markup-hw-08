@@ -68,33 +68,40 @@
 
   &::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
 .modal-form-checkbox-field {
   display: inline-flex;
+
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .modal-form-checkbox-link {
   color: var(--accent-color);
 }
 .modal-form-checkbox-icon {
-  display: block;
   width: 16px;
   height: 15px;
   margin-right: 8px;

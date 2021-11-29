@@ -9,6 +9,11 @@
   opacity: 1;
   transition: opacity 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
+
+  @media (max-width: 767px) {
+    padding: 94px 15px;
+  }
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
