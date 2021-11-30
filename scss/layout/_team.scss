@@ -17,9 +17,7 @@
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  &:last-child {
-    margin-right: 0;
-  }
+
   // @media (max-width: 575px) {
 
   //   }
@@ -47,6 +45,8 @@
 .team-item-description {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  padding: 30px 32px 24px;
 
   text-align: center;
 

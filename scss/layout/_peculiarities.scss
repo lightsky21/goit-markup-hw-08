@@ -55,6 +55,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .peculiarities-text {

@@ -79,6 +79,9 @@
   }
   transition: color 250ms var(--timing-function);
 }
+.mobile-menu__link_current {
+  color: var(--accent-color);
+}
 
 .mobile-menu__contacts-link {
   @extend %link;
