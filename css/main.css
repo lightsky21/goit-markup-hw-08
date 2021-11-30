@@ -1622,13 +1622,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .our-projects-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
 .our-projects-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1719,7 +1712,7 @@ img {
 
 @media (min-width: 1200px) {
   .our-projects-pictures-text {
-    padding: 49px 24px;
+    padding: 63px 24px;
   }
 }
 
